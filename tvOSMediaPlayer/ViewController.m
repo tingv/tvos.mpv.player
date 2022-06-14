@@ -191,7 +191,7 @@ static void wakeup(void *context)
         mpv_set_wakeup_callback(mpv, wakeup, (__bridge void *)self);
         // Load the indicated file
         
-        const char *cmd[] = {"loadfile", "http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v", NULL};
+        const char *cmd[] = {"loadfile", "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4", NULL};
         //        NSURL *movieURL = [[NSBundle mainBundle] URLForResource:@"hevc-test-soccer" withExtension:@"mts"];
         //        const char *cmd[] = {"loadfile", [movieURL.absoluteString UTF8String], NULL};
         check_error(mpv_command(mpv, cmd));
